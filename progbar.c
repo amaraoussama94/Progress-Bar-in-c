@@ -7,7 +7,6 @@ const int PROG_BAR_LENGTH =30 ;//30 caractere
 
 void update_bar(int percent_done)
 {
-    const int PROG_BAR_LENGTH =30 ;//30 caractere
     int num_car = percent_done * PROG_BAR_LENGTH  / 100 ;//number  of caractere to print 
     printf("\r[");
     for(int i =0;i<num_car;i++)
