@@ -1,13 +1,14 @@
 
-CC=clang
-CFLAGS=-g -Wall
+# Application 
+app :progbar.o   
+	gcc progbar.o  -o Progress_Bar   
+	 
+#serveur
 
-BIN=progbar
-
-all:$(BIN)
-
-%:%.c
-	$(CC) $(CFLAGS) -o $@ $<
+Server.o:progbar.c
+	gcc -c progbar.c
 
 clean:
-	$(RM) -r $(BIN) *.o
+#cleanup all object file
+	  -rm *.o $(objects) 
+	  -rm  Progress_Bar  
