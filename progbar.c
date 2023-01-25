@@ -13,7 +13,7 @@ void update_bar(int percent_done)
     for(int i =0;i<num_car;i++)
     {
         printf("\033[0;32m"); //Set the text to the color Green
-        printf("|");
+        printf("■");
     }
     for(int i =0;i<(PROG_BAR_LENGTH -num_car);i++) //unfinish part of  progress bar 
     {
