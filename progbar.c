@@ -23,7 +23,7 @@ void update_bar(int percent_done)
 int main()
 {
 
-    for(int i= 0;i<100;i++)
+    for(int i= 0;i<=100;i++)
     {
         update_bar(i);
         usleep(20000);//sleep for 20ms
