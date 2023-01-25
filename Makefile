@@ -3,9 +3,9 @@
 app :progbar.o   
 	gcc progbar.o  -o Progress_Bar   
 	 
-#serveur
+#Progress_Bar
 
-Server.o:progbar.c
+progbar.o:progbar.c
 	gcc -c progbar.c
 
 clean:
